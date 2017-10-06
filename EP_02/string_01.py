@@ -18,6 +18,8 @@
 
 #문자열 생성 기호를 사용해야 하는 경우
 'Hello Python3! I'm a newbie' #에러 발생!
-"Hello Python3! I'm a newbie" #문자열 생성을 위한 기호는 항상 짝이 맞아야만 합니다. 따라서 문자열에 ' 혹은 " 가 있는 경우 주의합시다.
+"Hello Python3! I'm a newbie" #문자열 생성을 위한 기호는 항상 짝이 맞아야만 합니다. 문자열에 ' 혹은 " 가 있는 경우 주의합시다.
 
 '강사가 이렇게 말했어요. "문자열 기호는 짝이 맞아야 합니다."'
+
+'Hello Python3! I\'m a newbie'
