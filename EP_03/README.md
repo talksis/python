@@ -26,7 +26,7 @@ input 함수는 사용자의 키보드 입력을 위한 함수입니다. input�
 그리고 이제부터는 Python3 공식 사이트의 문서에 표현된 방식으로 설명을 이어나가도록 하겠습니다.
 따라서 다음과 같이 input 함수는 사용됩니다.
 
-**input( [prompt] )**
+**input( [prompt] )**  
 <https://docs.python.org/3/library/functions.html#input>
 
 이때 [] 안에 있는 내용은 생략이 가능한 내용이며, prompt에 보여줄 내용이라는 뜻이 됩니다. 
