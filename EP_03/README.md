@@ -114,7 +114,7 @@ print 함수는 다양한 방법으로 변형이 가능합니다. print 함수�
 <https://docs.python.org/3/library/functions.html#print>
 
 
-**print(*objects, sep=’ ‘, end=’\n’, file=sys.stdout, flush=False)**  
+__print(*objects, sep=’ ‘, end=’\n’, file=sys.stdout, flush=False)__
 
 print 함수에서 필수적으로 첫번째 인자인 objects는 전달해야만 합니다. 그런데 한가지 특이한 점은 * 이 붙어있다는 것에 주목하세요. 이 부분에 대해서는 함수에서 더욱 자세하게 설명하겠습니다.
 그리고 다음 인자들을 살펴보면 우리가 아직 접하지 못한 인자들이 많다는 사실을 알 수 있습니다. 따라서 이 부분에 대해서 알아봅시다.
