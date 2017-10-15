@@ -30,7 +30,7 @@ if num_1 > num_2:
     print('첫번째 수가 큽니다.')
 else:
     print('두번째 수가 큽니다')
-
+ 
 
 ### 프로그램 수정 - 1
 if num_1 > num_2:
