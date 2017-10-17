@@ -1,3 +1,63 @@
+### string method
+## 5. 문자열 메소드
+파이썬에서는 문자열에 대해서 내장된 메소드들을 제공합니다. 이를 사용하면 문자열에 대한 조작은 더욱 쉽게 해줍니다.
+모든 메소드를 설명할 수 없지만 유용한 것들을 알아봅시다.
+한 가지 주의해야 할 점은 만약 문자열 메소드를 사용하게 된다면, 새로운 객체들이 생성되어 반환됩니다. 따라서 이를 저장하기 위해서는
+새로운 변수를 생성하거나, 기존의 자료를 덮어써야 합니다.
+
+
+### 문자열의 + *
+문자열에도 연산자가 지원됩니다. 우리가 당연하게 썼던 + 도 지원되며 * 연산자 역시 지원됩니다. 아래의 예제를 확인해 봅시다.
+
+```
+s1 = 'Hello '
+s2 = 'World '
+s = s1 + s2
+print(s) #결과값 'Hello World' 
+
+s = s1 * 5 + s2 * 2
+print(s) #결과값 'Hello Hello Hello Hello Hello World World'
+```
+
+### upper 모든 문자를 대문자로 변환, lower 모든 문자를 소문자로 변환
+```
+s = 'Hello'
+print(s.upper()) #결과값 'HELLO'
+print(s.lower()) #결과값 'hello'
+print(s) #결과값 'Hello
+```
+### split 문자열을 잘라 리스트로 반환
+아직 리스트를 배우지 않아 생소할 수 있습니다. 문자열의 특정 문자를 기준으로 잘라낼 수 있는데, 잘라내게 되면 1개 이상이 될 수 있습니다. 따라서 다양한 자료를 묶어서 표현하는 것을 리스트라고 합니다. 
+```
+s = 'Hello World. I am a newbie'
+print(s.split(' ')) #결과값 ['Hello', 'World.', 'I', 'am', 'a', 'newbie']
+print(s) #결과값 'Hello World. I am a newbie'
+```
+### replace 특정 문자열 치환하기
+가장 간단하게 replace를 사용하면 다음과 같습니다. 만약 횟수의 제한을 두기 위해서는 
+```
+s = 'Hello World. I am a newbie'
+print(s.replace('I am', 'You are')) #결과값 Hello World. You are a newbie
+print(s.replace('l','x',2)) #결과값 Hexxo World. You are a newbie
+print(s)
+
+
+```
+### count 특정 문자열 세기
+```
+s = 'Hello World. I am a newbie'
+print(s.count('l')) #결과값 3
+```
+### find, index 특정 문자의 위치 알려주기
+문자열의 특정 문자열 혹은 문자에 대한 인덱스를 반환하게 할 수 있습니다. 그런데 두 가지의 메소드가 같은 기능을 제공합니다. 하지만 두 메소드는 다른 특징을 가지고 있는데 find는 결과값이 없는 경우에는 -1을 반환하도록 되어 있습니다. 반면에 index의 경우 찾는 문자가 없는 경우 에러를 발생하게 됩니다. 만약 프로그램에서 에러를 발생하게 하는 경우에는 파이썬 코드가 멈추게 됩니다. 따라서 이를 해결하기 위해서는 적절한 예외처리를 해야만 계속 실행하게 됩니다. 예외 처리에 대해서는 추후 다시 설명합니다.
+```
+s = 'Hello World. I am a newbie'
+print(s.find('l')) #결과값 2
+print(s.find('x')) #결과값 -1
+print(s.index('l')) #결과값 2
+print(s.index('x')) #오류 발생
+```
+
 # input 과 output
 
 이번 강좌에서는 사용자 입력을 받아 그 데이터를 가공하여 출력하는 방법에 대해서 알아봅시다.
