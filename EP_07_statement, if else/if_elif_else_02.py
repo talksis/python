@@ -11,7 +11,7 @@
 
 |Operation|Meaning|
 |:-------:|:----------------:|
-|<	strictly less than
+|<|	strictly less than|
 |<=	less than or equal
 |>|	strictly greater than|
 |>=|	greater than or equal|
